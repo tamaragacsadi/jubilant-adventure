@@ -1,5 +1,77 @@
-html, body {
-    margin: 0;
-    background-color: maroon;
-    text-align: center;
+/* Text color */
+* {
+  color: #FAFAF8;
 }
+
+/* Background color */
+html, body {
+  margin: 0;
+  background-color: #0F0609;
+  scroll-behavior: smooth;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  grid-column: 1/5;
+  grid-row: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #450906;
+}
+
+nav a {
+  background-color: transparent;
+  text-decoration: none;
+  font-family: "Amethysta", serif;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-bottom: 0.5vw;
+  padding-top: 0.5vw;
+  font-size: 1vw;
+}
+
+#banner, #introduction, #about, #buynow {
+  grid-column: 2/4;
+  text-align: center;
+  justify-content: center;
+  background-color: #0F0609;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.title {
+  grid-column: 1/5;
+  grid-row: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#banner {
+  height: 100%;
+  width: auto;
+  background-image: url('img/galxrax-rax-oGAf4jsC0Fw-unsplash.jpg');
+  box-shadow: 0 0 30px 30px #0F0609 inset;
+}
+
+#banner > img {
+  width: 100%;
+}
+
+/* Responsive design  */
+@media (min-width: 320px) and (max-width: 480px) {}
+@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 769px) and (max-width: 1024px) {}
+@media (min-width: 1025px) and (max-width: 1200px) {}
+@media (min-width: 1201px) {}
